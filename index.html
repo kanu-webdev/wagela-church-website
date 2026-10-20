@@ -1,0 +1,1691 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> EECMY-NEKEMTE-CHELELEKI| Welcome Home</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #263238;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #102c3a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      color: #e6c77b;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #e6c77b;
+    }
+
+    .hero {
+      min-height: 540px;
+      padding: 100px 8%;
+      color: white;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg,
+        rgba(9, 29, 39, 0.88),
+        rgba(9, 29, 39, 0.35)),
+        url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.15;
+      margin: 15px 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .eyebrow {
+      color: #e6c77b;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      background: #c5a45c;
+      color: #102c3a;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #f0d99e;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      color: #102c3a;
+      margin-bottom: 10px;
+    }
+
+    .welcome {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .welcome p {
+      margin-bottom: 20px;
+      color: #5b656b;
+    }
+
+    .services {
+      background: #f4f6f5;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 24px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      border-bottom: 3px solid #c5a45c;
+    }
+
+    .card .icon {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #102c3a;
+      margin-bottom: 10px;
+    }
+
+    .verse {
+      background: #102c3a;
+      color: white;
+      text-align: center;
+    }
+
+    .verse blockquote {
+      font-size: clamp(22px, 3vw, 32px);
+      max-width: 850px;
+      margin: 20px auto;
+      font-style: italic;
+    }
+
+    .verse p {
+      color: #e6c77b;
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about-layout h2 {
+      font-size: 32px;
+      color: #102c3a;
+      margin-bottom: 15px;
+    }
+
+    .about-image {
+      width: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .contact {
+      background: #f4f6f5;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 12px 0;
+    }
+
+    footer {
+      background: #091d27;
+      color: #d9e0e3;
+      padding: 30px 8%;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 75px 7%;
+        min-height: 450px;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+    }
+
+/* Responsive design for phones and tablets */
+* {
+    box-sizing: border-box;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+.container,
+section {
+    width: 100%;
+    max-width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    h1 {
+        font-size: clamp(28px, 7vw, 42px);
+    }
+
+    h2 {
+        font-size: clamp(23px, 5vw, 32px);
+    }
+
+    iframe {
+        width: 100%;
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    iframe {
+        height: 240px;
+    }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 3px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.site-footer {
+    background: #123b2c;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 40px;
+}
+
+.site-footer h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.site-footer p {
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+.site-footer .copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 22px;
+    padding-top: 18px;
+    font-size: 13px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #123b2c;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+                display: none;
+opacity: 0;
+transition: opacity 0.3s ease,
+            background 0.3s ease,
+            transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background: #1b5e45;
+    transform: translateY(-3px);
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+}
+
+
+ 
+/* Elegant welcome animation */
+@keyframes welcomeFade {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#home h1 {
+    animation: welcomeFade 1s ease-out both;
+}
+
+#home p {
+    animation: welcomeFade 1.2s ease-out both;
+    animation-delay: 0.2s;
+}
+
+#home a {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+#home a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Respect visitors who prefer less animation */
+@media (prefers-reduced-motion: reduce) {
+    #home h1,
+    #home p {
+        animation: none;
+    }
+
+    #home a {
+        transition: none;
+    }
+
+/* Premium church welcome section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        135deg,
+        #0b241b,
+        #164b36 60%,
+        #236747
+    );
+    color: #ffffff;
+    padding: 90px 24px;
+    border-radius: 0 0 24px 24px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .eyebrow {
+    display: inline-block;
+    color: #f4d47a;
+    border: 1px solid rgba(244, 212, 122, 0.6);
+    border-radius: 30px;
+    padding: 8px 18px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 12px 0 20px;
+}
+
+.hero p {
+    color: #e7f0e9;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 65px 18px;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .hero .eyebrow {
+        letter-spacing: 1px;
+        font-size: 11px;
+    }
+}
+
+/* Premium welcome buttons */
+.hero-content a {
+    display: inline-block;
+    background: #f4d47a;
+    color: #123b2c;
+    padding: 13px 24px;
+    margin: 8px 6px;
+    border: 2px solid #f4d47a;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-content a:hover {
+    background: transparent;
+    color: #f4d47a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+    .hero-content a {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        margin: 12px auto;
+    }
+}
+
+/* Mission and vision section */
+.mission-section {
+    padding: 70px 22px;
+    background: #f7f8f3;
+    color: #183b2c;
+}
+
+.mission-heading {
+    max-width: 760px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.mission-label {
+    color: #a57c20;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.mission-heading h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 12px 0;
+}
+
+.mission-heading p {
+    line-height: 1.8;
+}
+
+.mission-cards {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.mission-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #e5dfc9;
+    box-shadow: 0 8px 24px rgba(18, 59, 44, 0.07);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(18, 59, 44, 0.12);
+}
+
+.mission-icon {
+    font-size: 32px;
+}
+
+.mission-card h3 {
+    color: #a57c20;
+    margin-bottom: 12px;
+}
+
+.mission-card p {
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .mission-section {
+        padding: 48px 16px;
+    }
+
+    .mission-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card {
+        padding: 24px;
+    }
+}
+
+}
+
+/* Church clock */
+.church-clock {
+    background: #123b2c;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+}
+
+.clock-label {
+    color: #f4d47a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#churchTime {
+    font-size: clamp(30px, 6vw, 44px);
+    font-weight: bold;
+    margin: 10px 0;
+    font-variant-numeric: tabular-nums;
+}
+
+#churchDate {
+    color: #e7f0e9;
+    font-size: 15px;
+}
+
+.signature-verse,
+.daily-scripture {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 28px 20px;
+    border-radius: 18px;
+}
+
+.signature-verse {
+    background: #123b2c;
+    color: white;
+    border: 1px solid #c9a449;
+}
+
+.daily-scripture {
+    background: #f7f8f3;
+    color: #183b2c;
+    border: 1px solid #e5dfc9;
+}
+
+.signature-verse h2,
+.daily-scripture h2 {
+    margin-bottom: 16px;
+}
+
+.signature-verse blockquote,
+.daily-scripture blockquote {
+    font-size: clamp(18px, 3vw, 24px);
+    line-height: 1.8;
+    font-style: italic;
+    margin: 20px auto;
+}
+
+.signature-verse .Oromo,
+.daily-scripture .Oromo {
+    line-height: 1.9;
+}
+
+.signature-verse .Oromo {
+    color: #f4d47a;
+}
+
+.daily-scripture .Oromo {
+    color: #164b36;
+}
+
+#dailyDate {
+    margin-top: 24px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.signature-verse,
+.daily-scripture {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 28px 20px;
+    border-radius: 18px;
+}
+
+.signature-verse {
+    background: #123b2c;
+    color: white;
+    border: 1px solid #c9a449;
+}
+
+.daily-scripture {
+    background: #f7f8f3;
+    color: #183b2c;
+    border: 1px solid #e5dfc9;
+}
+
+.signature-verse h2,
+.daily-scripture h2 {
+    margin-bottom: 16px;
+}
+
+.signature-verse blockquote,
+.daily-scripture blockquote {
+    font-size: clamp(18px, 3vw, 24px);
+    line-height: 1.8;
+    font-style: italic;
+    margin: 20px auto;
+}
+
+.signature-verse .Oromo,
+.daily-scripture .Oromo {
+    line-height: 1.9;
+}
+
+.signature-verse .Oromo {
+    color: #f4d47a;
+}
+
+.daily-scripture .Oromo {
+    color: #164b36;
+}
+
+#dailyDate {
+    margin-top: 24px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.gallery-section {
+    padding: 70px 20px;
+    text-align: center;
+    background: #f7f8f3;
+    color: #183b2c;
+}
+
+.gallery-section h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 12px 0;
+}
+
+.gallery-section > p {
+    line-height: 1.8;
+}
+
+.gallery-grid {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.gallery-item {
+    margin: 0;
+    overflow: hidden;
+    background: #123b2c;
+    border: 1px solid #c9a449;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-6px);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+.gallery-item figcaption {
+    padding: 16px 10px;
+    color: #f4d47a;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 230px;
+    }
+}
+
+.announcements-section {
+    padding: 70px 20px;
+    text-align: center;
+    background: #123b2c;
+    color: white;
+}
+
+.announcements-section h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 12px 0;
+}
+
+.announcement-intro {
+    line-height: 1.8;
+    color: #e4eadf;
+}
+
+.announcement-grid {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    text-align: left;
+}
+
+.announcement-card {
+    padding: 26px 22px;
+    border: 1px solid #c9a449;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.announcement-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.11);
+}
+
+.announcement-tag {
+    display: inline-block;
+    color: #f4d47a;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.announcement-card h3 {
+    color: #f4d47a;
+    margin-top: 16px;
+}
+
+.announcement-card p {
+    line-height: 1.8;
+}
+
+.announcement-card strong {
+    display: block;
+    margin-top: 18px;
+    color: #f4d47a;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .announcement-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.prayer-section {
+    padding: 70px 20px;
+    text-align: center;
+    background: #f7f8f3;
+    color: #183b2c;
+}
+
+.prayer-section h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 12px 0;
+}
+
+.prayer-intro {
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.9;
+}
+
+.prayer-card {
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 35px 24px;
+    background: white;
+    border: 1px solid #c9a449;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.prayer-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.prayer-card h3 {
+    color: #123b2c;
+}
+
+.prayer-card p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.support-section {
+    padding: 70px 20px;
+    text-align: center;
+    background: #123b2c;
+    color: white;
+}
+
+.support-section h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 12px 0;
+}
+
+.support-section > p {
+    max-width: 700px;
+    margin: 18px auto;
+    line-height: 1.9;
+}
+
+.support-card {
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 35px 24px;
+    border: 1px solid #c9a449;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.support-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.support-card h3 {
+    color: #f4d47a;
+}
+
+.support-card p {
+    line-height: 1.8;
+    margin: 18px 0 25px;
+}
+
+.share-church {
+    margin: 30px auto;
+    padding: 25px 20px;
+    max-width: 650px;
+    text-align: center;
+    border: 1px solid #c9a449;
+    border-radius: 16px;
+    background: #123b2c;
+    color: white;
+}
+
+.share-church h3 {
+    color: #f4d47a;
+}
+
+.share-church p {
+    line-height: 1.8;
+}
+
+.share-button {
+    padding: 13px 24px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 30px;
+    background: #c9a449;
+    color: #123b2c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.share-button:hover {
+    background: #f4d47a;
+}
+
+ </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">✝ EECMY-NEKEMTE-CHELELEKI</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#mission">Mission &amp; Vision</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#verse">Bible Verse</a>
+      <a href="#prayer">Prayer Requests</a>
+      <a href="#announcements">Announcements</a>
+      <a href="#support">Support Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+<section id="leadership">
+  <div class="section-title">
+    <span class="eyebrow">OUR CHURCH HERITAGE</span>
+    <h2>Our Church Heritage and Leadership</h2>
+    <p>
+      Rooted in Christian faith and the Oromo Gospel heritage.
+    </p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="symbol">📖</div>
+      <h3>Our Church Heritage</h3>
+      <p>
+        We honor the legacy of Onesimos Nesib, remembered
+        for his important work translating the Bible into
+        Afaan Oromo and helping spread the Gospel.
+      </p>
+      <p class="Oromo">
+        Hojii fi dhaala Onesimos Nesib kan Afaan Oromootiin
+        Wangeela babal'isuu keessatti qabu ni kabajna.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">🙏</div>
+      <h3>Our Faith</h3>
+      <p>
+        We gather to worship God, learn from the Bible,
+        pray together, and share the love of Jesus Christ.
+      </p>
+      <p class="Oromo">
+        Waaqayyoon waaqeffanna, Macaafa Qulqulluu baranna,
+        waliin kadhanna, jaalala Kiristoosis qoodna.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">🤝</div>
+      <h3>Our Community</h3>
+      <p>
+        We value fellowship, service, unity, and supporting
+        one another in faith.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">Faith • Hope • Love</span>
+
+        <h1> Waldaa Keenya Baga Nagaan Dhuftan 
+            waldaa amantoota makaana yesuus cheleleqi
+        </h1>
+
+        <p>
+          Welcome to EECMY-NEKEMTE-CHELELEKI. We are a community
+          united by faith, growing in God's Word, and
+          sharing His love with the world.
+
+          Iddoo amantii, abdii, jaalalaa fi tokkummaa
+        </p>
+
+        <a href="#about" class="btn">Discover Our Church</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="welcome">
+        <div class="section-title">
+          <h2>Welcome to Our Church</h2>
+          <p>There is a place for you here.</p>
+        </div>
+
+        <p>
+          Whether you are visiting for the first time,
+          returning to faith, or looking for a church
+          family, we welcome you with open hearts.
+        </p>
+
+        <a href="#contact" class="btn">Plan Your Visit</a>
+      </div>
+    </section>
+
+<div class="share-church">
+    <h3>Share Our Church</h3>
+    <p class="Oromo">
+        Waldaa keenya hiriyoota fi maatii keessan waliin qoodadhaa.
+    </p>
+
+    <button type="button" class="share-button" onclick="shareChurchWebsite()">
+        Share Our Website
+    </button>
+</div>
+
+    
+<section class="services" id="services">
+  <div class="section-title">
+    <h2>Our Worship Schedule</h2>
+    <p>Join us in worship, prayer, and fellowship.</p>
+    <p class="Oromo">
+      Kottaa waliin Waaqayyoon haa waaqeffannu.
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="symbol">🙏</div>
+      <h3>Sunday Worship</h3>
+      <p><strong>Day:</strong> Every Sunday</p>
+      <p><strong>Time:</strong> 8:00 AM</p>
+      <p class="Oromo">Dilbata — Sa'aatii 2:00</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">📖</div>
+      <h3>Wednesday Program</h3>
+      <p><strong>Day:</strong> Every Wednesday</p>
+      <p><strong>Time:</strong> 8:00 AM – 12:00 PM</p>
+      <p class="Oromo">
+        Roobii — Sa'aatii 2:00 hanga 6:00
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">✝️</div>
+      <h3>Friday Program</h3>
+      <p><strong>Day:</strong> Every Friday</p>
+      <p><strong>Time:</strong> 8:00 AM – 12:00 PM</p>
+      <p class="Oromo">
+        Jimaata — Sa'aatii 2:00 hanga 6:00
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+    <section class="verse" id="verse">
+    
+<span class="eyebrow">OUR CHURCH VERSE • LALLABA WALDAA KEENYAA</span>
+
+<div class="signature-verse">
+    <h2>Our Church Scripture</h2>
+    <p class="Oromo">Caqasa Kitaaba Qulqulluu Waldaa Keenyaa</p>
+
+    <blockquote>
+        "O earth, earth, earth, hear the word of the LORD."
+    </blockquote>
+
+    <p>Jeremiah 22:29 (KJV)</p>
+
+    <blockquote class="Oromo">
+        "Yaa lafaa! Yaa lafaa! Yaa lafaa!
+        Dubbii Waaqayyoo dhaga'i!"
+    </blockquote>
+
+    <p class="Oromo">Ermiyaas 22:29</p>
+</div>
+
+<div class="daily-scripture">
+   
+<script>
+const dailyScriptures = [
+   
+</script>
+
+
+<div class="daily-scripture">
+    <span class="eyebrow">DAILY SCRIPTURE</span>
+    <h2>Today's Bible Verse</h2>
+    <p class="Oromo">Caqasa Kitaaba Qulqulluu Har'aa</p>
+
+    <blockquote id="dailyVerse">Loading verse...</blockquote>
+    <p id="dailyReference"></p>
+
+    <blockquote id="dailyVerseOromo" class="Oromo"></blockquote>
+    <p id="dailyReferenceOromo" class="Oromo"></p>
+
+    <p id="dailyDate"></p>
+</div>
+
+<script>
+const dailyScriptures = [
+    {
+        en: "The LORD is my shepherd; I shall not want.",
+        ref: "Psalm 23:1 (KJV)",
+        om: "Waaqayyo tiksee koo ti; ani homaa hin dhabu.",
+        omRef: "Faarfannaa 23:1"
+    },
+    {
+        en: "I can do all things through Christ which strengtheneth me.",
+        ref: "Philippians 4:13 (KJV)",
+        om: "Kiristoos isa na jabeessu sanaan waan hundumaa gochuu nan danda'a.",
+        omRef: "Filiphisiyus 4:13"
+    },
+    {
+        en: "Trust in the LORD with all thine heart; and lean not unto thine own understanding.",
+        ref: "Proverbs 3:5 (KJV)",
+        om: "Gara kee guutuudhaan Waaqayyoon amanadhu; hubannaa kee qofattis hin hirkatin.",
+        omRef: "Fakkeenya 3:5"
+    },
+    {
+        en: "Be strong and of a good courage; be not afraid, neither be thou dismayed.",
+        ref: "Joshua 1:9 (KJV)",
+        om: "Jabaadhu, ija jabaadhu; hin sodaatin, hin na'in.",
+        omRef: "Iyyaasuu 1:9"
+    },
+    {
+        en: "The LORD is my light and my salvation; whom shall I fear?",
+        ref: "Psalm 27:1 (KJV)",
+        om: "Waaqayyo ifa koo fi fayyisaa koo ti; ani eenyuun sodaadha?",
+        omRef: "Faarfannaa 27:1"
+    },
+    {
+        en: "But they that wait upon the LORD shall renew their strength.",
+        ref: "Isaiah 40:31 (KJV)",
+        om: "Warri Waaqayyoon eeggatan humna isaanii ni haaromsatu.",
+        omRef: "Isaayaas 40:31"
+    },
+    {
+        en: "For where two or three are gathered together in my name, there am I in the midst of them.",
+        ref: "Matthew 18:20 (KJV)",
+        om: "Bakka namoonni lama yookaan sadii maqaa kootiin walitti qabamanitti, ani isaan gidduu nan jira.",
+        omRef: "Maatewos 18:20"
+    }
+];
+
+function updateDailyScripture() {
+    const parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Africa/Addis_Ababa",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+    }).formatToParts(new Date());
+
+    const part = type => parts.find(p => p.type === type).value;
+
+    const dateKey =
+        `${part("year")}-${part("month")}-${part("day")}`;
+
+    const dayNumber = Math.floor(
+        Date.UTC(
+            Number(part("year")),
+            Number(part("month")) - 1,
+            Number(part("day"))
+        ) / 86400000
+    );
+
+    const index =
+        ((dayNumber % dailyScriptures.length) +
+        dailyScriptures.length) % dailyScriptures.length;
+
+    const verse = dailyScriptures[index];
+
+    document.getElementById("dailyVerse").textContent =
+        '"' + verse.en + '"';
+    document.getElementById("dailyReference").textContent = verse.ref;
+    document.getElementById("dailyVerseOromo").textContent =
+        '"' + verse.om + '"';
+    document.getElementById("dailyReferenceOromo").textContent =
+        verse.omRef;
+    document.getElementById("dailyDate").textContent =
+        "Date in Ethiopia: " + dateKey;
+}
+
+updateDailyScripture();
+</script>
+
+    </section>
+
+    <section id="about">
+      <div class="about-layout">
+        <div>
+          <img
+            class="about-image"
+            src="https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1000&q=85"
+            alt="Church worship gathering"
+          >
+        </div>
+
+        <div>
+          <span class="eyebrow">Who We Are</span>
+          <h2>Growing Together in Faith</h2>
+
+          <p>
+            Our church exists to glorify God, teach
+            His Word, build a loving community and
+            help people discover the hope found in Jesus Christ.
+          </p>
+
+          <br>
+
+          <p>
+            We believe that faith is strengthened
+            through prayer, fellowship, service and
+            a life centered on God's Word.
+          </p>
+
+          <br>
+
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+    </section> 
+<section class="mission-section" id="mission">
+    <div class="mission-heading">
+        <span class="mission-label">OUR PURPOSE</span>
+        <h2>Our Mission &amp; Vision</h2>
+        <p>
+            Growing together in faith, sharing God's love,
+            and serving our community through Jesus Christ.
+        </p>
+        <p class="Oromo">
+            Amantii keessatti guddachuu, jaalala Waaqayyoo
+            qooddachuu, akkasumas hawaasa keenya Yesuus
+            Kiristoosiin tajaajiluu.
+        </p>
+    </div>
+
+    <div class="mission-cards">
+        <article class="mission-card">
+            <div class="mission-icon">🙏</div>
+            <h3>Our Mission</h3>
+            <p>
+                To worship God, teach His Word, strengthen
+                believers, and share the love of Jesus Christ
+                with our community.
+            </p>
+        </article>
+
+        <article class="mission-card">
+            <div class="mission-icon">🌿</div>
+            <h3>Our Vision</h3>
+            <p>
+                To grow as a faithful, loving, and united
+                church that serves the community and inspires
+                future generations.
+            </p>
+        </article>
+    </div>
+</section>
+<section id="gallery" class="gallery-section">
+    <span class="eyebrow">OUR CHURCH FAMILY</span>
+    <h2>Church Photo Gallery</h2>
+
+    <p class="Oromo">
+        Suuraa waldaa keenyaa fi hojiiwwan keenya
+    </p>
+
+    <p>
+        Moments of worship, fellowship, faith, and community.
+    </p>
+
+    <div class="gallery-grid">
+        <figure class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=800&q=85"
+                alt="Church worship gathering"
+                loading="lazy"
+            >
+            <figcaption>Worship &amp; Praise</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=85"
+                alt="People gathering together"
+                loading="lazy"
+            >
+            <figcaption>Church Fellowship</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=85"
+                alt="Sunrise over the landscape"
+                loading="lazy"
+            >
+            <figcaption>Faith &amp; Hope</figcaption>
+        </figure>
+    </div>
+</section>
+<section id="announcements" class="announcements-section">
+    <span class="eyebrow">STAY CONNECTED</span>
+    <h2>Church Announcements</h2>
+
+    <p class="Oromo">
+        Beeksisa Waldaa Keenyaa
+    </p>
+
+    <p class="announcement-intro">
+        Important updates and upcoming activities
+        from our church family.
+    </p>
+
+    <div class="announcement-grid">
+
+        <article class="announcement-card">
+            <span class="announcement-tag">WORSHIP</span>
+            <h3>Sunday Worship Service</h3>
+            <p>
+                Join us for worship, prayer, fellowship,
+                and the Word of God.
+            </p>
+            <p class="Oromo">
+                Waaqeffannaa, kadhannaa fi Dubbii Waaqayyoo
+                keessatti nu waliin ta'aa.
+            </p>
+            <strong>Every Sunday • 8:00 AM</strong>
+        </article>
+
+        <article class="announcement-card">
+            <span class="announcement-tag">PRAYER</span>
+            <h3>Midweek Fellowship</h3>
+            <p>
+                Come together for prayer, encouragement,
+                and spiritual growth.
+            </p>
+            <p class="Oromo">
+                Kadhannaa fi jajjabina hafuuraa keessatti
+                waliin haa guddannu.
+            </p>
+            <strong>Wednesday • 8:00 AM–12:00 PM</strong>
+        </article>
+
+        <article class="announcement-card">
+            <span class="announcement-tag">FELLOWSHIP</span>
+            <h3>Friday Gathering</h3>
+            <p>
+                Spend time together in faith, unity,
+                and fellowship.
+            </p>
+            <p class="Oromo">
+                Amantii fi tokkummaa keessatti waliin
+                haa jiraannu.
+            </p>
+            <strong>Friday • 8:00 AM–12:00 PM</strong>
+        </article>
+
+    </div>
+</section>
+<section id="prayer" class="prayer-section">
+    <span class="eyebrow">WE ARE HERE FOR YOU</span>
+    <h2>Prayer Requests</h2>
+
+    <p class="Oromo">
+        Gaaffii Kadhannaa
+    </p>
+
+    <p class="prayer-intro">
+        Whatever you are going through, you do not have
+        to face it alone. Share your prayer request with us.
+    </p>
+
+    <p class="Oromo">
+        Waan keessa jirtu kamiyyuu keessatti kophaa kee
+        miti. Gaaffii kadhannaa kee nuuf qoodi.
+    </p>
+
+    <div class="prayer-card">
+        <div class="prayer-icon">🙏</div>
+
+        <h3>How Can We Pray for You?</h3>
+
+        <p>
+            We believe in the power of prayer.
+            Our church family would be glad to pray with you.
+        </p>
+
+        <a
+            class="btn"
+            href="#contact"
+        >
+            Contact Our Church
+        </a>
+    </div>
+</section>
+
+<section id="support" class="support-section">
+    <span class="eyebrow">GIVE WITH LOVE</span>
+    <h2>Support Our Church</h2>
+
+    <p class="Oromo">
+        Waldaa Keenya Deggeraa
+    </p>
+
+    <p>
+        Your generosity can help support worship,
+        community service, and the sharing of God's Word.
+    </p>
+
+    <p class="Oromo">
+        Arjummaan keessan waaqeffannaa, tajaajila hawaasaa
+        fi Dubbii Waaqayyoo babal'isuu gargaaruu danda'a.
+    </p>
+
+    <div class="support-card">
+        <div class="support-icon">💚</div>
+
+        <h3>Every Gift Makes a Difference</h3>
+
+        <p>
+            If you would like to support our church,
+            please contact us for official donation details.
+        </p>
+
+        <a href="#contact" class="btn">
+            Ask About Donations
+        </a>
+    </div>
+</section>
+
+
+
+<section class="church-clock">
+    <p class="clock-label">OUR CHURCH • NEKEMTE</p>
+    <div id="churchTime">Loading time...</div>
+    <div id="churchDate">Loading date...</div>
+</section>
+
+
+
+    <section class="contact" id="contact">
+      <div class="section-title">
+        <h2>We Would Love to Hear From You</h2>
+        <p>Visit us, call us or send us a message.</p>
+      </div>
+
+      <p><strong>Church:</strong> EECMY-NEKEMTE-CHELELEKI</p>
+      <p><strong>Address:</strong> Add your church address</p>
+      <p><strong>Phone:</strong> Add your church phone number</p>
+      <p><strong>Email:</strong> Add your church email</p>
+
+      <br>
+
+      <a class="btn"
+         href="mailto:yourchurch@example.com">
+        Email Our Church
+      </a>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.666318609445!2d36.549661274067496!3d9.094130487968028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1653016e83b3bdbb%3A0x8ab0f712cacfce00!2sCheleleki%20Mekane%20Yesus%20Church!5e0!3m2!1sam!2set!4v1792433456601!5m2!1sam!2set" width="100" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> </section>
+  </main>
+
+  <footer>
+    <p>✝ EECMY-NEKEMTE-CHELELEKI</p>
+    <p>Sharing God's love, one life at a time.</p>
+    <p>&copy; <span id="year"></span> EECMY-NEKEMTE-CHELELEKI.
+      All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+<footer class="site-footer">
+    <h3>Waldaa Warra Wagelaa Makana Yesuus</h3>
+    <p>Nekemte, Cheleleqi, Ethiopia</p>
+    <p>May the love of Christ unite us in faith and service.</p>
+    <p class="Oromo">
+        Jaalalli Kiristoos amantii fi tajaajila keessatti nu haa tokkoomsu.
+    </p>
+    <p class="copyright">
+        &copy; 2026 Waldaa Warra Wagelaa Makana Yesuus.
+        All rights reserved.
+    </p>
+</footer>
+
+<button id="backToTop" title="Back to Top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ↑ Back to Top
+</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+        backToTop.style.opacity = "1";
+    } else {
+        backToTop.style.opacity = "0";
+        backToTop.style.display = "none";
+    }
+});
+</script>
+
+<a
+    href="https://wa.me/2519XXXXXXXX"
+    class="whatsapp-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact our church on WhatsApp">
+    WhatsApp Us
+</a>
+
+<script>
+function updateChurchClock() {
+    const now = new Date();
+
+    document.getElementById("churchTime").textContent =
+        new Intl.DateTimeFormat("en-ET", {
+            timeZone: "Africa/Addis_Ababa",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: true
+        }).format(now);
+
+    document.getElementById("churchDate").textContent =
+        new Intl.DateTimeFormat("en-ET", {
+            timeZone: "Africa/Addis_Ababa",
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        }).format(now);
+}
+
+updateChurchClock();
+setInterval(updateChurchClock, 1000);
+</script>
+
+<script>
+async function shareChurchWebsite() {
+    const shareData = {
+        title: "Waldaa Warra Wagelaa Makana Yesuus Nekemte Cheleleqi",
+        text: "Visit our church website.",
+        url: window.location.href
+    };
+
+    try {
+        if (navigator.share) {
+            await navigator.share(shareData);
+        } else if (navigator.clipboard) {
+            await navigator.clipboard.writeText(shareData.url);
+            alert("Website link copied!");
+        } else {
+            prompt("Copy your church website link:", shareData.url);
+        }
+    } catch (error) {
+        if (error.name !== "AbortError") {
+            alert("Please copy the website link from your browser.");
+        }
+    }
+}
+</script>
+
+
+</body>
+</html>
