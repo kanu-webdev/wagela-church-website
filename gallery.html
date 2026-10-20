@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#082c22">
+    <title>Church Photo Gallery | Waldaa Warra Wagelaa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #071e18;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 45px 20px;
+            background: linear-gradient(135deg, #082c22, #14563e);
+            border-bottom: 2px solid #d6ad55;
+        }
+
+        header h1 {
+            color: #e5c16e;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #e0e8e3;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 20px;
+            border: 1px solid #e5c16e;
+            border-radius: 25px;
+            color: #e5c16e;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            background: #e5c16e;
+            color: #082c22;
+        }
+
+        .gallery {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 18px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .photo {
+            margin: 0;
+            background: #10362b;
+            border: 1px solid #315447;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.25s;
+        }
+
+        .photo:hover {
+            transform: translateY(-5px);
+        }
+
+        .photo img {
+            display: block;
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .photo figcaption {
+            padding: 14px;
+            text-align: center;
+            color: #e5c16e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 15px;
+            color: #c4d3ca;
+            border-top: 1px solid #315447;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.94);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .lightbox.open {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 95%;
+            max-height: 85vh;
+            object-fit: contain;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 22px;
+            color: white;
+            font-size: 38px;
+            cursor: pointer;
+            background: none;
+            border: 0;
+        }
+
+        @media (max-width: 750px) {
+            .gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+                padding: 18px 12px;
+            }
+
+            .photo img {
+                height: 190px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .photo img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Church Gallery</h1>
+        <p>
+            Waldaa Warra Wagelaa Makana Yesuus<br>
+            Nekemte Cheleleqi
+        </p>
+        <p>Memories of worship, fellowship and faith.</p>
+        <a class="back-link" href="index.html">← Back to Home</a>
+    </header>
+
+    <main class="gallery">
+
+        <!-- REAL CHURCH PHOTO -->
+       <figure class="photo">
+    <img src="images/kk.jpg" alt="Church photo 1" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+<figure class="photo">
+    <img src="images/kk1.jpg" alt="Church photo 2" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+<figure class="photo">
+    <img src="images/kk2.jpg" alt="Church photo 3" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+<figure class="photo">
+    <img src="images/kk3.jpg" alt="Church photo 4" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure><figure class="photo">
+    <img src="images/kk4.jpg" alt="Church photo 5" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+<figure class="photo">
+    <img src="images/kk5.jpg" alt="Church photo 6" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+<figure class="photo">
+    <img src="images/kk6.jpg" alt="Church photo 7" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+<figure class="photo">
+    <img src="images/kk7.jpg" alt="Church photo 8" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+<figure class="photo">
+    <img src="images/kk8.jpg" alt="Church photo 9" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+<figure class="photo">
+    <img src="images/kk9.jpg" alt="Church photo 10" loading="lazy">
+    <figcaption>Church Memories</figcaption>
+</figure>
+
+    </main>
+
+    <div class="lightbox" id="lightbox"
+         role="dialog" aria-modal="true"
+         aria-label="Enlarged church photograph">
+        <button class="close" id="closeLightbox"
+                aria-label="Close photo">&times;</button>
+        <img id="largePhoto" src="" alt="">
+    </div>
+
+    <footer>
+        <p>Faith • Hope • Love</p>
+        <p>Waldaa Warra Wagelaa Makana Yesuus Nekemte Cheleleqi</p>
+    </footer>
+
+    <script>
+        const lightbox = document.getElementById("lightbox");
+        const largePhoto = document.getElementById("largePhoto");
+
+        document.querySelectorAll(".photo img").forEach(function(photo) {
+            photo.addEventListener("click", function() {
+                largePhoto.src = photo.src;
+                largePhoto.alt = photo.alt;
+                lightbox.classList.add("open");
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove("open");
+            largePhoto.src = "";
+        }
+
+        document.getElementById("closeLightbox")
+            .addEventListener("click", closeLightbox);
+
+        lightbox.addEventListener("click", function(event) {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+        });
+    </script>
+
+</body>
+</html>
