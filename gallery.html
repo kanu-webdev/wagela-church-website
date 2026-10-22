@@ -146,6 +146,59 @@
                 height: 250px;
             }
         }
+        .photo-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.photo-nav:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+.photo-nav.prev {
+    left: 18px;
+}
+
+.photo-nav.next {
+    right: 18px;
+}
+
+#lightbox {
+    position: relative;
+}
+
+#largePhoto {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .photo-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .photo-nav.prev {
+        left: 8px;
+    }
+
+    .photo-nav.next {
+        right: 8px;
+    }
+}
     </style>
 </head>
 <body>
@@ -279,6 +332,8 @@
         <button class="close" id="closeLightbox"
                 aria-label="Close photo">&times;</button>
         <img id="largePhoto" src="" alt="">
+        <button id="prevPhoto" class="photo-nav prev">❮</button>
+        <button id="nextPhoto" class="photo-nav next">❯</button>
     </div>
 
     <footer>
@@ -289,12 +344,32 @@
     <script>
         const lightbox = document.getElementById("lightbox");
         const largePhoto = document.getElementById("largePhoto");
+        const photos = Array.from(document.querySelectorAll(".photo img"));
+let currentPhotoIndex = 0;
+       photos.forEach(function(photo, index) {
+    photo.addEventListener("click", function() {
+        currentPhotoIndex = index;
+        showPhoto();
+        lightbox.classList.add("open");
+    });
+});
 
-        document.querySelectorAll(".photo img").forEach(function(photo) {
-            photo.addEventListener("click", function() {
-                largePhoto.src = photo.src;
-                largePhoto.alt = photo.alt;
-                lightbox.classList.add("open");
+function showPhoto() {
+    largePhoto.src = photos[currentPhotoIndex].src;
+    largePhoto.alt = photos[currentPhotoIndex].alt;
+}
+
+document.getElementById("prevPhoto").addEventListener("click", function(event) {
+    event.stopPropagation();
+    currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+    showPhoto();
+});
+
+document.getElementById("nextPhoto").addEventListener("click", function(event) {
+    event.stopPropagation();
+    currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+    showPhoto();
+});
             });
         });
 
